@@ -4,17 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch ./src/server.ts",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "git-commit-msg-linter": "^5.0.7"
   },
   "devDependencies": {
     "@pedrohvfernandes/eslint-config": "^0.0.9",
-    "eslint": "^8.57.0"
+    "@types/node": "^20.11.30",
+    "git-commit-msg-linter": "^5.0.7",
+    "eslint": "^8.57.0",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.2"
   }
 }
