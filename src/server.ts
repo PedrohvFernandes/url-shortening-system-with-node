@@ -1,6 +1,17 @@
 import fastify from 'fastify'
+import {
+  GetRouteCreateLinks,
+  PostRouteCreateLinks,
+  GetRouteOriginalUrl,
+  GetRouteMetrics,
+} from 'routes'
 
 const app = fastify()
+
+app.register(GetRouteCreateLinks)
+app.register(PostRouteCreateLinks)
+app.register(GetRouteOriginalUrl)
+app.register(GetRouteMetrics)
 
 app
   .listen({

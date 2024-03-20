@@ -1,1 +1,19 @@
-GET http://localhost:3000/teste
+POST  http://localhost:3000/api/links
+Content-Type: application/json
+
+{
+  "code": "teste",
+  "originalUrl": "https://reactjs.org/"
+}
+
+###
+
+GET  http://localhost:3000/api/links
+
+###
+
+GET  http://localhost:3000/api/metrics
+
+###
+
+GET  http://localhost:3000/teste
