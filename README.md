@@ -252,3 +252,10 @@ Password: docker
 
 Click connect
 ```
+
+### 👨‍💻 Autor:
+
+- Linkedin: https://www.linkedin.com/in/pedro-henrique-vieira-fernandes
+- Git: https://github.com/PedrohvFernandes
+- Instagram: pedro17fernandes
+- portfolio: https://pedrohvfernandes-web-page-portfolio.vercel.app
