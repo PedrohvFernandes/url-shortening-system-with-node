@@ -3,7 +3,7 @@ import {
   GetRouteCreateLinks,
   PostRouteCreateLinks,
   GetRouteOriginalUrl,
-  GetRouteMetrics,
+  GetRouteMetrics
 } from 'routes'
 
 const app = fastify()
@@ -16,7 +16,7 @@ app.register(GetRouteMetrics)
 app
   .listen({
     port: 3000,
-    host: 'localhost',
+    host: 'localhost'
   })
   .then(() => {
     // Depois que subir o servidor com sucesso, imprime no console

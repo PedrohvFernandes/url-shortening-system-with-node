@@ -17,8 +17,8 @@ export async function getMetrics(app: FastifyInstance) {
         return {
           metrics: {
             shortLinkId: item.value, // Member/content
-            clicksScore: item.score,
-          },
+            clicksScore: item.score
+          }
         }
       })
 

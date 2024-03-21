@@ -7,5 +7,5 @@ export {
   PostRouteCreateLinks,
   GetRouteCreateLinks,
   GetRouteOriginalUrl,
-  GetRouteMetrics,
+  GetRouteMetrics
 }

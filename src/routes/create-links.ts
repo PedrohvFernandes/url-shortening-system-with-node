@@ -9,7 +9,7 @@ export async function createLinks(app: FastifyInstance) {
     const createLinkSchema = z.object({
       code: z.string().min(3),
       // A URL tem que ser uma URL válida
-      originalUrl: z.string().url(),
+      originalUrl: z.string().url()
     })
 
     // Desestruturação do corpo da requisição e passando a o request.body para o createLinkSchema, para validar
@@ -35,21 +35,21 @@ export async function createLinks(app: FastifyInstance) {
 
       // 201 é o status de criado
       return replay.status(201).send({
-        shortLinkId: link.id,
+        shortLinkId: link.id
       })
     } catch (error) {
       if (error instanceof postgres.PostgresError) {
         // Se ele é um erro que veio do postgre, como duplicate key value violates unique constraint "short_links_code_key" e se o codigo do error for 23505
         if (error.code === '23505') {
           return replay.status(400).send({
-            message: 'Duplicated code!',
+            message: 'Duplicated code!'
           })
         }
 
         console.log(error)
         // Caso erro seja diferente de 23505, retorna um erro interno
         return replay.status(500).send({
-          message: 'Internal error!',
+          message: 'Internal error!'
         })
       }
     }

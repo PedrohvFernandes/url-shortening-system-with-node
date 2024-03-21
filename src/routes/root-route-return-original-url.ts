@@ -7,7 +7,7 @@ import { z } from 'zod'
 export async function rootRouteReturnOriginalUrl(app: FastifyInstance) {
   app.get('/:code', async (request, reply) => {
     const getLinkSchema = z.object({
-      code: z.string(),
+      code: z.string()
     })
 
     const { code } = getLinkSchema.parse(request.params)

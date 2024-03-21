@@ -9,5 +9,5 @@ import postgres from 'postgres'
  shortlinks --> nome do banco de dados
  */
 export const sql = postgres(
-  'postgresql://docker:docker@localhost:5432/shortlinks',
+  'postgresql://docker:docker@localhost:5432/shortlinks'
 )
