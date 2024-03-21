@@ -7,19 +7,22 @@
     "dev": "tsx watch ./src/server.ts",
     "setup": "tsx ./src/setup.ts",
     "lint": "eslint . --max-warnings 0",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "fastify": "^4.26.2",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "postgres": "^3.4.3",
     "redis": "^4.6.13",
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@pedrohvfernandes/eslint-config": "^0.1.0",
+    "@pedrohvfernandes/eslint-config": "^0.1.2",
     "@types/node": "^20.11.30",
     "eslint": "^8.57.0",
     "git-commit-msg-linter": "^5.0.7",
